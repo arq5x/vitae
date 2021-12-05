@@ -1,9 +1,12 @@
 %______________________________________________________________________________________________________________________
 % @brief    LaTeX2e Resume for Aaron R Quinlan
 \documentclass[margin,line]{cv}
-\usepackage{url}
-\usepackage{enumerate}
-\usepackage{hyperref}
+\usepackage[dvipdfm]{hyperref}
+\usepackage{url, xcolor,enumerate}
+\definecolor{darkblue}{rgb}{0.0,0.1,0.9}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
 
 %______________________________________________________________________________________________________________________
 \begin{document}
@@ -21,10 +24,36 @@
 
     %__________________________________________________________________________________________________________________
     % Research interests
-    \section{\mysidestyle Research interests} Mechanisms and consequences of genome mutation; Software and algorithms 
-    for genome research; Genetics of rare disease; Genetics of male infertility; Cancer genomics and targeted therapies;
-    Purifying selection in the human genome.
+    \section{\mysidestyle Research} Software and algorithms for genome research; 
+    Mechanisms and consequences of genome mutation;  Genetics of rare disease; 
+    Purifying selection in the human genome; Genetics of male infertility; 
+    Cancer genomics and targeted therapies.
     %__________________________________________________________________________________________________________________
+    
+    %__________________________________________________________________________________________________________________
+    % Software
+    \section{\mysidestyle Software} 
+    \href{https://bedtools.readthedocs.io/en/latest/}{bedtools},
+    \href{https://gemini.readthedocs.io/en/latest/}{gemini},
+    \href{https://github.com/arq5x/lumpy-sv}{lumpy},
+    \href{https://github.com/quinlan-lab/STRling}{STRling},
+    \href{https://github.com/brentp/peddy}{peddy},
+    \href{https://github.com/brentp/somalier}{somalier},
+    \href{https://github.com/brentp/mosdepth}{mosdepth},
+    \href{https://github.com/38/d4-format}{d4tools},
+    \href{https://github.com/brentp/slivar}{slivar},
+    \href{https://github.com/brentp/seqcover}{seqcover},
+    \href{https://github.com/ryanlayer/samplot}{samplot},
+    \href{https://github.com/brwnj/idplot}{idplot},
+    \href{https://github.com/brentp/duphold}{duphold},
+    \href{https://github.com/brentp/poretools}{poretools},
+    \href{https://github.com/brwnj/covviz}{covviz},
+    \href{https://github.com/ryanlayer/gqt}{gqt},
+    \href{https://github.com/ryanlayer/giggle}{giggle},
+    \href{https://github.com/brentp/cyvcf2}{cyvcf2},
+    \href{https://github.com/brentp/hts-nim}{hts-nim}
+
+    
     % Education
     \section{\mysidestyle Education}
 
@@ -88,54 +117,24 @@
     Ruth L. Kirschstein (NRSA / F32) Postdoctoral Fellowship, NHGRI. 2009-2010                         \\\vspace{1mm}%
     Presidential Fellowship, Boston College. 2004-2007                                                               %
 
-    %__________________________________________________________________________________________________________________
-    % Manuscript Review
-    \section{\mysidestyle Journal Review}
-    \textit{Ad hoc} reviewer for:\\
-        \textit{Nature}, \textit{Nature Genetics}, \textit{Nature Methods},\\
-        \textit{Nature Biotechnology}, \textit{AJHG}, \\
-        \textit{Genome Research}, \textit{Genome Biology}\\
-	      \textit{Bioinformatics}, \textit{BMC Bioinformatics},\\
-          \textit{Bioessays}, \textit{Genes}, and \\
-        \textit{IEEE Transactions On Computational Biology and Bioinformatics}
-
-    Guest editor for \textit{PLoS Computational Biology}
-
-    %__________________________________________________________________________________________________________________
-    % Grant Review
-    \section{\mysidestyle Grant Review}
-    \textbf{NIH}:\\
-    NIH Special Emphasis Panel, Oct, 2021\\
-    NIH BDMA Study Section, Feb, 2021\\
-    NCI ITCR Set-aside Funds Review, Oct 11, 2020\\
-    NIH Special Emphasis Panel (ZMH1-ERB-C-09) June 24, 2020\\
-    NIH GCAT Study Section, Feb 20, 2019\\
-    Co-chair of the American Heart Association Uncovering New Patterns Study Section, (Feb and March, 2018)\\
-    NIH GCAT Study Section, Washington, DC (10-Oct-2017 - 12-Oct-2017)\\
-    NIH GCAT Study Section, Washington, DC (8-Jun-2016 - 9-Jun-2016)\\
-    NIH GCAT Study Section, Chicago, IL (16-Oct-2013 - 17-Oct-2013)\\
-    Special Emphasis Panel for Computational Analysis of ENCODE data (U01). (16-May-2012)
-
-    \textbf{Foreign}:\\
-    Reviewer for Genome Canada's 2012 Bioinformatics and Computational Biology Competition (9-Dec-2012)\\
-    Ad hoc reviewer for Icelandic Research Fund (3-Nov-2015)
-
-
-  %__________________________________________________________________________
+      %__________________________________________________________________________
     % Teaching
     %__________________________________________________________________________
     \section{\mysidestyle Teaching}
-    Applied Computational Genomics. Full semester course. University of Utah. Spring 2022. \\
-    Applied Computational Genomics. Full semester course. University of Utah. Spring 2021. \\
-    Applied Computational Genomics. Full semester course. University of Utah. Spring 2020. \\
+    Applied Computational Genomics. Full semester course. University of Utah. Spring 2017-2022. \\
+    - \href{https://github.com/quinlan-lab/applied-computational-genomics}{Syllabus} \\
+    - \href{https://www.youtube.com/playlist?list=PLCbXw1opqIQeNfF26-wWegdGoCC1aut0P}{Youtube} \\
+    \\    
     Salt Lake Learners of Biostatistics. Interest Group. University of Utah. Starting May, 2019. \\
-    Applied Computational Genomics. Full semester course. University of Utah. Spring 2018. \\
-    Applied Computational Genomics. Full semester course. University of Utah. Spring 2017. \\
+    - \href{https://github.com/quinlan-lab/sllobs-biostats}{Syllabus} \\
+    - \href{https://www.youtube.com/playlist?list=PLCbXw1opqIQfqklJIt4UILB6ZMye24GnP}{Youtube} \\  
+    \\     
     Faculty for CSHL Advanced Sequencing Technologies Course, 2009 - Present\\
+    - \href{https://meetings.cshl.edu/courses.aspx?course=C-SEQTEC}{Details} \\
+    \\
     Applied Genomics II (PH TX 7778-001). University of Utah, Spring 2016. \\
     Evolutionary Genetics and Genomics (HGEN 6092). University of Utah, Spring 2016. \\
     Advanced Genomics Journal Club (BMI 7010-003/HGEN 6810-001). University of Utah, Spring 2016. \\
-    \emph{- http://meetings.cshl.edu/courses/2013/c-seqtech13.shtml}
 
     \vspace{-2mm}
     Faculty for the University of Washington's Center for Mendelian Genetics Workshop. 2014 - 2018
@@ -170,8 +169,6 @@
 
     \vspace{-2mm}
     Guest Lecturer for graduate course in genomics (BIOCH 5080), 15-Feb-2011
-    %__________________________________________________________________________
-
 
     %__________________________________________________________________________________________________________________
     % Publications
@@ -186,23 +183,26 @@
 
     \begin{list}{*}{}
 
+    \item[87.] Harriet Dashnow, Brent S. Pedersen, Laurel Hiatt, Joe Brown, Sarah J. Beecroft, Gianina Ravenscroft, Amy J. LaCroix, Phillipa Lamont, Richard H. Roxburgh, Miriam J. Rodrigues, Mark Davis, Heather C. Mefford, Nigel G. Laing, \textbf{Quinlan AR}. 
+    STRling: a k-mer counting approach that detects short tandem repeat expansions at known and novel loci. \emph{Biorxiv}. 
 
     \item[86.] Ryan M. Layer, Fritz J. Sedlazeck, Brent S. Pedersen, \textbf{Quinlan AR}. Mining Thousands of Genomes to Classify Somatic and Pathogenic Structural Variants. \emph{Biorxiv}. 
 
-    \item[85.] Peter McHale, \textbf{Quinlan AR}$\dagger$. trfermikit: a tool to discover VNTR-associated deletions. \emph{Biorxiv}. 
+    \item[85.] Goldstein SA, Brown J, Pedersen BS, \textbf{Quinlan AR}, Elde NC. Extensive recombination-driven coronavirus diversification expands the pool of potential pandemic pathogens. \emph{Biorxiv}. 
 
-    \item[84.] Goldstein SA, Brown J, Pedersen BS, \textbf{Quinlan AR}, Elde NC. Extensive recombination-driven coronavirus diversification expands the pool of potential pandemic pathogens. \emph{Biorxiv}. 
+    \item[84.] Fixsen, Sarah M; Cone, Kelsey R; Goldstein, Stephen A; Sasani, Thomas A; \textbf{Quinlan AR}; Rothenburg, Stefan; Elde, Nels C. Poxviruses capture host genes by LINE-1 retrotransposition. \emph{Biorxiv}. 
 
-    \item[83.] Fixsen, Sarah M; Cone, Kelsey R; Goldstein, Stephen A; Sasani, Thomas A; \textbf{Quinlan AR}; Rothenburg, Stefan; Elde, Nels C. Poxviruses capture host genes by LINE-1 retrotransposition. \emph{Biorxiv}. 
 
-    \item[82.] Hou, Hao; Pedersen, Brent S; \textbf{Quinlan AR}$\dagger$.  Efficient storage and analysis of quantitative genomics data with the Dense Depth Data Dump (D4) format and d4tools. \emph{Biorxiv}. 
 
- 
     \end{list}    
 
     \textbf{2021} \\
 
     \begin{list}{*}{}
+
+    \item[83.] Peter McHale, \textbf{Quinlan AR}$\dagger$. trfermikit: a tool to discover VNTR-associated deletions. \emph{Bioinformatics}. 
+
+    \item[82.] Hou, Hao; Pedersen, Brent S; \textbf{Quinlan AR}$\dagger$.  Efficient storage and analysis of quantitative genomics data with the Dense Depth Data Dump (D4) format and d4tools. \emph{Nature Computational Science}. 
 
     \item[81.] Pedersen, Brent S; Brown, Joseph M; Dashnow, Harriet; Wallace, Amelia D; Velinder, Matt; Tvrdik, Tatiana; Mao, Rong; Best, Hunter D; Bayrak-Toydemir, Pinar; \textbf{Quinlan AR}$\dagger$.  Effective variant filtering and expected candidate variant yield in studies of rare human disease. \emph{Nature Genomic Medicine}. 
 
@@ -227,7 +227,7 @@
 
     \begin{list}{*}{}
 
-    \item[73.] PCarleton JB, Ginley-Hidinger M, Berrett KC, Layer RM, \textbf{Quinlan AR}, Gertz J. Regulatory sharing between estrogen receptor α bound enhancers. \emph{Nucleic Acids Research}. 2020
+    \item[73.] PCarleton JB, Ginley-Hidinger M, Berrett KC, Layer RM, \textbf{Quinlan AR}, Gertz J. Regulatory sharing between estrogen receptor alpha bound enhancers. \emph{Nucleic Acids Research}. 2020
 
     \item[72.] Pedersen BS, Bhetariya PJ, Brown J, Marth GT, Jensen RL, Bronner MP, Underhill HR, \textbf{Quinlan AR}$\dagger$. Somalier: rapid relatedness estimation for cancer and germline studies using efficient genome sketches. \emph{Genome Medicine}. 2020
 
@@ -304,7 +304,7 @@
     Settling the score: variant prioritization and Mendelian disease. \emph{Nature Reviews Genetics, doi:10.1038/nrg.2017.52}. 2017.
 
     \item[49.] Pedersen BS, \textbf{Quinlan AR}$\dagger$.
-    Who's who? Detecting and resolving sample anomalies in human DNA  sequencing studies with ​peddy. \emph{AJHG. DOI: 10.1016/j.ajhg.2017.01.017}. 2017. 
+    Who's who? Detecting and resolving sample anomalies in human DNA sequencing studies with peddy. \emph{AJHG. DOI: 10.1016/j.ajhg.2017.01.017}. 2017. 
 
     \item[48.] Pedersen BS, \textbf{Quinlan AR}$\dagger$.
     cyvcf2: fast, flexible variant analysis with Python. \emph{Bioinformatics. DOI: 10.1093/bioinformatics/btx057}. 2017. 
@@ -687,6 +687,41 @@
     PI: Aaron Quinlan\\
     Source: NIH/NHGRI (F32 HG005197-02)\\
     Period funded: 01-Aug-2009 - 31-Dec-2010
+
+     %__________________________________________________________________________
+    %__________________________________________________________________________________________________________________
+    % Manuscript Review
+    \section{\mysidestyle Journal Review}
+    \textit{Ad hoc} reviewer for:\\
+        \textit{Nature}, \textit{Nature Genetics}, \textit{Nature Methods},\\
+        \textit{Nature Biotechnology}, \textit{AJHG}, \\
+        \textit{Genome Research}, \textit{Genome Biology}\\
+	      \textit{Bioinformatics}, \textit{BMC Bioinformatics},\\
+          \textit{Bioessays}, \textit{Genes}, and \\
+        \textit{IEEE Transactions On Computational Biology and Bioinformatics}
+
+    Guest editor for \textit{PLoS Computational Biology}
+
+    %__________________________________________________________________________________________________________________
+    % Grant Review
+    \section{\mysidestyle Grant Review}
+    \textbf{NIH}:\\
+    NIH Special Emphasis Panel, Oct, 2021\\
+    NIH BDMA Study Section, Feb, 2021\\
+    NCI ITCR Set-aside Funds Review, Oct 11, 2020\\
+    NIH Special Emphasis Panel (ZMH1-ERB-C-09) June 24, 2020\\
+    NIH GCAT Study Section, Feb 20, 2019\\
+    Co-chair of the American Heart Association Uncovering New Patterns Study Section, (Feb and March, 2018)\\
+    NIH GCAT Study Section, Washington, DC (10-Oct-2017 - 12-Oct-2017)\\
+    NIH GCAT Study Section, Washington, DC (8-Jun-2016 - 9-Jun-2016)\\
+    NIH GCAT Study Section, Chicago, IL (16-Oct-2013 - 17-Oct-2013)\\
+    Special Emphasis Panel for Computational Analysis of ENCODE data (U01). (16-May-2012)
+
+    \textbf{Foreign}:\\
+    Reviewer for Genome Canada's 2012 Bioinformatics and Computational Biology Competition (9-Dec-2012)\\
+    Ad hoc reviewer for Icelandic Research Fund (3-Nov-2015)
+
+
 
     %__________________________________________________________________________________________________________________
     % Seminars
